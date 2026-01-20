@@ -1,7 +1,7 @@
 import { drawLine, redrawCanvas } from "./canvas.js";
 
 export function initSocket(ctx) {
-  const socket = io("http://localhost:3000");
+  const socket = io("https://collaborative-canvas-production-cfb9.up.railway.app");
 
   socket.on("stroke:live", (data) => {
     drawLine(
